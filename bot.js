@@ -86,7 +86,7 @@ client.on('raw', async event => {
 				member.addRole(`559692315883601927`);
 			} else if (emojiName === '☣️') {
 				member.addRole(`585205613110362128`);
-			} else if (emojiName === '☁') {
+			} else if (emojiName === '☁️') {
 				member.addRole(`559692392228323351`);
 			} else {
 				member.addRole(`559692235503828992`);
@@ -98,7 +98,7 @@ client.on('raw', async event => {
 				member.removeRole(`559692315883601927`);
 			} else if (emojiName === '☣️') {
 				member.removeRole(`585205613110362128`);
-			} else if (emojiName === '☁') {
+			} else if (emojiName === '☁️') {
 				member.removeRole(`559692392228323351`);
 			} else {
 				member.removeRole(`559692235503828992`);
