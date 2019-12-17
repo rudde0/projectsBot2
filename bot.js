@@ -33,12 +33,12 @@ const events = {
 	console.log(`${newMember.guild.roles.array()}`);
 	if (newMember.roles.has(newMember.guild.roles.array()) > 17) {
 		if (newMember.roles.size == 1) {
-			newMember.removeRole(`627782465741783050`);
+			newMember.removeRole(`655728201586180166`);
 		} else if (newMember.roles.size > 1) {
-		newMember.addRole(`627782465741783050`);
+		newMember.addRole(`655728201586180166`);
 		}
 	} else if (newMember.roles.size == 1) {
-	  	newMember.removeRole(`627782465741783050`);
+	  	newMember.removeRole(`655728201586180166`);
 	}
 });*/
 
@@ -56,17 +56,9 @@ client.on('raw', async event => {
 	/* Hesap Onaylama */
 	if (message.author.id === '302767242943135754' && (message.id === '655870914059305004')) { //Üye Rolü
 		if (event.t === "MESSAGE_REACTION_ADD") {
-			if (emojiName === ':basarili:') {
-				member.addRole(`655722224321298442`);
-			} else {
-				member.addRole(`655722224321298442`);
-			}
+			member.addRole(`655722224321298442`);
 		} else {
-			if (emojiName === ':basarili:') {
-				member.removeRole(`655722224321298442`);
-			} else {
-				member.removeRole(`655722224321298442`);
-			}
+			member.removeRole(`655722224321298442`);
 		}
 	}
 	/* Ortak Duyurular */
@@ -74,14 +66,14 @@ client.on('raw', async event => {
 		if (event.t === "MESSAGE_REACTION_ADD") {
 			if (emojiName === '📢') {
 				member.addRole(`655719541875277840`);
-			} else if (emojiName === ':scroll:') {
+			} else if (emojiName === '📜') {
 				member.addRole(`655728024947261460`);
 			}
 		} else {
 			if (emojiName === '📢') {
 				member.removeRole(`655719541875277840`);
-			} else if (emojiName === ':scroll:') {
-				member.addRole(`655728024947261460`);
+			} else if (emojiName === '📜') {
+				member.removeRole(`655728024947261460`);
 			}
 		}
 	}
@@ -90,9 +82,9 @@ client.on('raw', async event => {
 		if (event.t === "MESSAGE_REACTION_ADD") {
 			if (emojiName === '👑') {
 				member.addRole(`655873825384300589`);
-			} else if (emojiName === ':altin:') {
+			} else if (emojiName === '💎') {
 				member.addRole(`559692315883601927`);
-			} else if (emojiName === ':biohazard:') {
+			} else if (emojiName === '☣️') {
 				member.addRole(`585205613110362128`);
 			} else if (emojiName === '☁') {
 				member.addRole(`559692392228323351`);
@@ -102,9 +94,9 @@ client.on('raw', async event => {
 		} else {
 			if (emojiName === '👑') {
 				member.removeRole(`655873825384300589`);
-			} else if (emojiName === ':altin:') {
+			} else if (emojiName === '💎') {
 				member.removeRole(`559692315883601927`);
-			} else if (emojiName === ':biohazard:') {
+			} else if (emojiName === '☣️') {
 				member.removeRole(`585205613110362128`);
 			} else if (emojiName === '☁') {
 				member.removeRole(`559692392228323351`);
